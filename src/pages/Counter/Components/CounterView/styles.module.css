@@ -1,0 +1,63 @@
+.wrapper{
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.even {
+    background: linear-gradient(45deg, #6b4ea0, #a0abe7);
+}
+
+.odd {
+    background: linear-gradient(45deg, #a0e1e7, #41a3be);
+}
+
+.screens {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.screen{
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+.buttons {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    opacity: 0.8;
+}
+
+.link {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #000;
+    opacity: 0.8;
+    font-weight: 600;
+    text-decoration: none;
+}
