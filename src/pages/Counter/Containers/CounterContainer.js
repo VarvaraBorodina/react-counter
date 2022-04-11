@@ -18,18 +18,12 @@ export default class CounterContainer extends Component {
     }
   }
 
-  handleDecriment = () => {
-    this.setState((state) => {
-      if (state.currentValue === 0) {
-        return {
-          currentValue: state.currentValue,
-        };
-      } else {
-        return {
-          currentValue: state.currentValue - 1,
-        };
-      }
-    });
+  handleDecrement = () => {
+    if (this.state.currentValue > 0) {
+      this.setState(({ currentValue }) => ({
+        currentValue: this.state.currentValue - 1,
+      }));
+    }
   };
 
   handleIncrement = () => {
@@ -45,11 +39,10 @@ export default class CounterContainer extends Component {
   };
 
   render() {
-    console.log(this.state.parityType);
     return (
       <CounterView
         currentValue={this.state.currentValue}
-        onDecriment={this.handleDecriment}
+        onDecrement={this.handleDecrement}
         onIncrement={this.handleIncrement}
         onReset={this.handleReset}
         numberType={this.state.parityType}

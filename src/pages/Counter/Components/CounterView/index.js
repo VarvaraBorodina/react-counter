@@ -1,12 +1,12 @@
-import PropTypes from "prop-types";
-import styles from "./styles.module.css";
-
 import { Link } from "react-router-dom";
 import { ROUTE_NAMES } from "../../../../Routes/routeNames";
 
+import PropTypes from "prop-types";
+import styles from "./styles.module.css";
+
 const CounterView = ({
   currentValue,
-  onDecriment,
+  onDecrement,
   onIncrement,
   onReset,
   numberType,
@@ -28,7 +28,7 @@ const CounterView = ({
         <div className={styles.screen}> {numberType} </div>
       </div>
       <div className={styles.buttons}>
-        <button className={styles.button} onClick={onDecriment}>
+        <button className={styles.button} onClick={onDecrement}>
           -
         </button>
         <button className={styles.button} onClick={onReset}>
@@ -48,7 +48,7 @@ const CounterView = ({
 CounterView.propTypes = {
   currentValue: PropTypes.number.isRequired,
   onIncrement: PropTypes.func.isRequired,
-  onDecriment: PropTypes.func.isRequired,
+  onDecrement: PropTypes.func.isRequired,
   onReset: PropTypes.func.isRequired,
   numberType: PropTypes.string.isRequired,
 };

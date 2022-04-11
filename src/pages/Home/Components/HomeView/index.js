@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
-import styles from "./styles.module.css";
-
 import { Link } from "react-router-dom";
 import { ROUTE_NAMES } from "../../../../Routes/routeNames";
+
+import PropTypes from "prop-types";
+import styles from "./styles.module.css";
 
 const HomeView = () => {
   return (
