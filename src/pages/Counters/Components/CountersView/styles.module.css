@@ -1,0 +1,50 @@
+.wrapper{
+    max-width: 300px;
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+.even {
+    background: #a0dee7;
+}
+
+.odd {
+    background: #a0e7cf;
+}
+
+.screens {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.screen{
+    width: 30%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #fff;
+    opacity: 0.8;
+}
+
+.buttons {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.button {
+    width: 20%;
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    opacity: 0.8;
+}
