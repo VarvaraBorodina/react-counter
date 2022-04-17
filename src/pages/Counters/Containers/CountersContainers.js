@@ -18,7 +18,7 @@ const CountersContainer = () => {
 
       return copy;
     });
-  });
+  }, []);
 
   const remove = useCallback(() => {
     setCounters((state) => {
@@ -29,53 +29,52 @@ const CountersContainer = () => {
         return { value: value - (value % 2), id: id };
       });
     });
-  });
+  }, []);
 
   const reset = useCallback(() => {
     setCounters((state) => {
       return [];
     });
-  });
+  }, []);
 
   const handleIncrement = useCallback((id) => {
-    const index = counters.findIndex((user) => user.id == id);
-    const currentValue = counters[index].value;
-
     setCounters((state) => {
+      const index = state.findIndex((counter) => counter.id == id);
+      const currentValue = state[index].value;
+
       const copy = [...state];
       copy[index].value = currentValue + 1;
       return copy;
     }, []);
-  });
+  }, []);
 
   const handleDecrement = useCallback((id) => {
-    const index = counters.findIndex((user) => user.id == id);
-    const currentValue = counters[index].value;
+    setCounters((state) => {
+      const index = state.findIndex((counter) => counter.id == id);
+      const currentValue = state[index].value;
 
-    if (currentValue > 0) {
-      setCounters((state) => {
-        const copy = [...state];
+      const copy = [...state];
+      if (currentValue > 0) {
         copy[index].value = currentValue - 1;
-        return copy;
-      }, []);
-    }
-  });
+      }
+      return copy;
+    }, []);
+  }, []);
 
   const handleReset = useCallback((id) => {
-    const index = counters.findIndex((user) => user.id == id);
-
     setCounters((state) => {
+      const index = state.findIndex((counter) => counter.id == id);
+
       const copy = [...state];
       copy[index].value = 0;
       return copy;
     }, []);
-  });
+  }, []);
 
   const handleDelete = useCallback((id) => {
-    setCounters((state) => counters.filter((count) => count.id != id));
-  });
+    setCounters((state) => state.filter((counter) => counter.id != id));
+  }, []);
 
-  console.log(counters);
   return (
     <div>
       <CountersPanel
