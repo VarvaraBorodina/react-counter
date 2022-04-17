@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/VarvaraBorodina/react-counter/static/css/main.344ab9b5.css",
+    "main.js": "/VarvaraBorodina/react-counter/static/js/main.a976d112.js",
+    "index.html": "/VarvaraBorodina/react-counter/index.html",
+    "main.344ab9b5.css.map": "/VarvaraBorodina/react-counter/static/css/main.344ab9b5.css.map",
+    "main.a976d112.js.map": "/VarvaraBorodina/react-counter/static/js/main.a976d112.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.344ab9b5.css",
+    "static/js/main.a976d112.js"
+  ]
+}
