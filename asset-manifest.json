@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/VarvaraBorodina/react-counter/static/css/main.344ab9b5.css",
-    "main.js": "/VarvaraBorodina/react-counter/static/js/main.a976d112.js",
-    "index.html": "/VarvaraBorodina/react-counter/index.html",
-    "main.344ab9b5.css.map": "/VarvaraBorodina/react-counter/static/css/main.344ab9b5.css.map",
-    "main.a976d112.js.map": "/VarvaraBorodina/react-counter/static/js/main.a976d112.js.map"
+    "main.css": "/react-counter/static/css/main.6123c7d1.css",
+    "main.js": "/react-counter/static/js/main.7375c126.js",
+    "index.html": "/react-counter/index.html",
+    "main.6123c7d1.css.map": "/react-counter/static/css/main.6123c7d1.css.map",
+    "main.7375c126.js.map": "/react-counter/static/js/main.7375c126.js.map"
   },
   "entrypoints": [
-    "static/css/main.344ab9b5.css",
-    "static/js/main.a976d112.js"
+    "static/css/main.6123c7d1.css",
+    "static/js/main.7375c126.js"
   ]
 }
