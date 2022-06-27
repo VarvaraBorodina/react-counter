@@ -11,7 +11,7 @@
 }
 
 .link {
-    width: 25%;
+    width: 20%;
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -29,4 +29,10 @@
 .body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width:765) {
+    .body {
+        grid-template-columns: 1fr;
+    }
 }
